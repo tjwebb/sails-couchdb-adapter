@@ -1,0 +1,42 @@
+{
+  "name": "sails-couchdb-adapter",
+  "version": "0.10.0",
+  "description": "sails-couchdb-adapter adapter for Sails / Waterline",
+  "scripts": {
+    "test": "node test/integration/runner -R spec -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjwebb/sails-couchdb-adapter.git"
+  },
+  "keywords": [
+    "couchdb",
+    "couch",
+    "adapter",
+    "sails",
+    "waterline",
+    "sails.js",
+    "plugin",
+    "sails-couchdb-adapter"
+  ],
+  "author": "Travis Webb <me@traviswebb.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "cradle": "^0.6.9",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "waterline-adapter-tests": "~0.10.0",
+    "mocha": "*",
+    "captains-log": "~0.11.0"
+  },
+  "waterlineAdapter": {
+    "type": "sails-couchdb-adapter",
+    "interfaces": [
+      "semantic",
+      "queryable"
+    ],
+    "waterlineVersion": "~0.10.0"
+  }
+}
